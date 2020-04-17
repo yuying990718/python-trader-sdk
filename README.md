@@ -46,5 +46,11 @@ stgy_id = your_strategy_id
 r = 0.3
 
 order_id = client.set_position(strategy_id=stgy_id, Ratio=r, LimitPrice=1)
+### 
+r = position ratio
+ex:
+1.If you want to open a long position with 30% of your account margin.   ->  r = 0.3  
+2.But things have changed, you decide to short a position by 20%.  -> r = -0.2 (In fact, you short 50% of your margin in this step.)
+3.The market is going the right way, you decide to close your position.  -> r = 0 
 
 ```
